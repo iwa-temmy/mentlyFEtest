@@ -1,39 +1,178 @@
-# MentlyFEtest Frontend Coding Challenge
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-## Welcome
+<a name="readme-top"></a>
 
-This challenge is designed to assess your Frontend development skills. We're excited to see your approach to building user interfaces with Next.js and Tailwind CSS.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+<img src="./public/mently-logo.png" alt="Logo" height=50">
 
-## The Challenge
+<h3 align="center">MentlyFEtest Frontend Coding Challenge </h3>
 
-Your task is to build a frontend page based on the designs (Website and Mobile Responsive) provided in this [Figma file](https://www.figma.com/design/TJoaUZPIgzakOHleCtJeNb/Mently-Frontend-Test?node-id=0-1&node-type=canvas&t=B30FPyMAYW7jtBcX-0).
+  <p align="center">
+   This repository contains an implementation of the Mently Frontend Coding Assessment Challenge completed by Iwaloye Olawale Samuel.
+  </p>
+</div>
 
-**Key Requirements:**
-* **Use Next.js:**  The application should be built using the Next.js framework.
-* **Use Tailwind CSS:** Style the application using Tailwind CSS.
-* **Responsiveness:** Ensure the application is responsive and works well on different screen sizes.
-* **Accessibility:**  Follow accessibility best practices to make the application usable for everyone.
-* **Code Quality:**  Write clean, well-documented, and maintainable code.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#technologies">Technologies Used</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#conventions-followed">Conventions Followed</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
 
-**Bonus Points:**
+<!-- ABOUT THE PROJECT -->
 
-* **Animations/Interactions:** Add subtle animations or interactions to enhance the user experience.
-* **Testing:** Include unit tests for your components.
-* **Deployment:** Send your Pull request to this Repo
-* **Mobile Responsive:** Desktop and mobile responsive screens
+## About The Project
 
-## Submission
+`...`
 
-Please submit your code within the time allotted (2-3 days) via a PR to this repo.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Evaluation Criteria
+### Technologies Used
 
-Your submission will be evaluated on the following criteria:
+- Framework: Next JS (15) + TypeScript
+- UI: Shadcn and Tailwindcss
+- Styling: CSS
+- Formatting: ESLint and Prettier
+- Git hooks: Husky
 
-* **Completeness:**  How closely the implementation matches the Figma design.
-* **Code Quality:**  Cleanliness, organization, and maintainability of the code.
-* **Functionality:**  Correctness and efficiency of the application's features.
-* **Responsiveness:**  How well the application adapts to different screen sizes.
-* **Accessibility:**  Adherence to accessibility guidelines.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-We appreciate your time and effort in completing this challenge. Good luck!
+### Project Structure
+
+    .
+    ├── __tests__
+    |   ├── components                  # Contains tests for components.
+    |   ├── layouts                     # Contains tests for layouts.
+    |   ├── pages                       # Contains tests for pages.
+    |   |   ├── homepage.test.js        # Contains test instructions to test the homepage.
+    ├── husky
+    |   ├── commit-msg                  # Contains to check the commit message if it follows the global standard of commit message
+    |   ├── post-commit                 # Contains instruction to run when a commit is triggered after actually committing
+    |   ├── pre-commit                  # Contains instruction to run when a commit is triggered before actually committing
+    |   ├── pre-push                    # Contains instruction to run when a commit is triggered before pushing the committed changes
+    ├── public                          # Project assets - like svgs and images used
+    ├── app                             # All project files
+    │   ├── font                        # directory of other assets
+    │   ├── global.css                  # general css file for the project
+    │   ├── layout.tsx                  # Layout for the entire app.
+    |   ├── page.tsx                    # Page for the default route "/".
+    ├── lib                             # Utility constants, function, validations etc.
+    │   ├── utils.ts                    # Utililty functions and other important functions.
+    |   ├── types                       # Types and Interfaces for variables, constant, payload e.t.c
+    |   ├── schema                      # Validation Schema for forms
+    ├── postcss.config.mjs              # contains instructions for postcss configuration
+    ├── tailwind.config.ts              # contains instructions for tailwindcss configuration.
+    ├── jest.config.ts                  # contains instructions for jest configuration for tests
+    ├── babel.config.js                 # contains instructions for babel configuration
+    ├── commmitlint.config.js           # contains instructions for commit linting and adherence to commit message standards
+    ├── linstagedrc.js                  # contains instructions for linting
+    ├── .prettierrc.ts                  # contains instructions for prettier linting
+    ├── branch-name-lint.json           # contains instructions for branch checks.
+    ├── components.json
+    ├── next.config.ts
+    ├── package.json                    # contains project information, package and dependencies installed, instructions.
+    ├── README.md
+    ├── tsconfig.json                   # contains instructions typescript configuration
+    └── ...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Conventions Followed
+
+- All Folders are lowercases
+- There should be only one level of folder in each component folder (i.e. `/components/{component}/{subcomponent}` should be the deepest tree level in the component folder).
+- Functions use camelCases while components use kebab-case for naming comvention, file names should be lowercase (words should be separated by hyphens).
+- `...`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://https://github.com/YouverifyHQ/nextjs-raw-template.git
+   ```
+2. cd into the project
+   ```sh
+   cd mentlytest-fe
+   ```
+3. Install packages
+   ```sh
+   yarn install
+   ```
+4. Start up project
+   ```sh
+   yarn run dev
+   ```
+5. To run tests
+   ```sh
+   yarn run test
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## Working on the Youverify Next JS Raw Template
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+6. To Create a page, create a folder in the app directory with the name/route of the page you want and then in that directory create a file named `page.tsx`.io
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-url]: https://github.com/github_username/repo_name/network/members
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-url]: https://github.com/github_username/repo_name/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/repo_name/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/linkedin_username
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com

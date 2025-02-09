@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "next",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "es2020": true
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "overrides": [
+    {
+      "files": ["__tests__/**/*"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
